@@ -1,0 +1,43 @@
+.main {
+}
+.main .container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+.testimonials {
+    margin-top: 5%;
+}
+.testimonials-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:3%;
+    align-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.testimonials-items img {
+    padding-bottom: 10%;
+
+}
+
+
+.testimonials-items figure {
+}
+.testimonials-items p {
+    font-size: 20px;
+    opacity: 0.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonials-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 800px) {}
+@media screen and (max-width: 600px) {
+    .testimonials-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
