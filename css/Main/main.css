@@ -111,6 +111,7 @@
     gap: 8%;
 }
 .CallToAction-input {
+
 }
 .CallToAction-input p {
     font-family: 'Raleway';
@@ -125,42 +126,24 @@
     position: relative;
 }
 .CallToAction-input_floating .text-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;   
-    padding: 1rem .75rem;
-    pointer-events: none;
-    transform-origin: 0 0;
-    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    
 }
-.CallToAction-input_floating .text-input::-moz-placeholder {
-    color: transparent;
-}
-.CallToAction-input_floating .text-input::placeholder {
-    color: transparent;
-}
-.CallToAction-input_floating .text-input:focus,
-.CallToAction-input_floating .text-input:not(:placeholder-shown){
-    padding-top: 1.625rem;
-    padding-bottom: .625rem;
-}
-.CallToAction-input_floating .text-input:focus~.text-label,
-.CallToAction-input_floating .text-input:not(:placeholder-shown)~.text-label{
-    opacity: .65;
-    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
-}
+
 .text-input {
+    background-color: rgba(255, 255, 255, 0.193);
     width: 255px;
     height: 50px;
     padding: 10px;
+    border: none;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 600;
 }
-.text-label {
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-    opacity: 0.6;
+.text-input::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    text-align: center;
+    
 }
 .CallToAction-input__btn {
     width: 255px;
@@ -172,6 +155,7 @@
     color: #FFF;
     background-color: #D4C17F;
     border: none;
+    margin: auto;
 }
 .CallToAction-input__btn:hover {
     background-color: #d4b97f;
@@ -191,6 +175,34 @@
     }
     .appartments-heading {
         text-align: center;
+    }
+    .CallToAction-heading {
+        text-align: center;
+        padding-top: 35%;
+    }
+    .CallToAction-items p {
+       text-align: center;
+       margin-bottom: 5%;
+       padding: 0 2%;
+    }
+    .CallToAction-flex {
+        display: flex;
+        flex-flow: column;   
+    }
+    .CallToAction-flex:last-child {
+        display: flex;
+        padding-right: 0%;
+        
+    }
+    .text-input{
+        margin-bottom: 4%;
+    }
+    .container-CallToAction {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .CallToAction-items__input{
+        gap: 1%;
     }
 }
 @media screen and (max-width: 800px) {}
@@ -218,5 +230,10 @@
     .appartments-image img{
         width: 80%;
         
+    }
+    .CallToAction-items__input{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1%;
+        text-align: center;
     }
 }
