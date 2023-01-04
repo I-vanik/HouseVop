@@ -1,9 +1,15 @@
+
+/* main */
+
 .main {
 }
 .main .container {
     margin: 0 auto;
     max-width: 780px;
 }
+
+/* section testimonials */
+
 .testimonials {
     margin-top: 5%;
     padding-bottom: 5%;
@@ -161,6 +167,79 @@
     background-color: #d4b97f;
 }
 
+/* section video */
+
+
+.video{
+    text-align: center;
+    max-width: 719px;
+    max-height: 650px;
+    margin: 0 auto;
+}
+.video video{
+    width: 719px;
+    height: 650px;
+}
+
+/* section maps */
+
+.maps {
+    margin-top: 8%;
+}
+.container-maps {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.maps_heading {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    margin-bottom: 7%;
+}
+.maps_div iframe{
+    width: 100%;
+}
+
+/* section CallToAction-2 */
+
+.CallToAction-2 {
+}
+.container-CallToAction-2{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.CallToAction-heading-2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    padding-top: 10%;
+}
+.CallToAction-grid {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+.CallToAction-grid p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.CallToAction-input {
+}
+.CallToAction-input_floating {
+}
+.text-input {
+}
+.CallToAction-input__btn {
+}
+
+
+            /* media */
 
 @media screen and (max-width: 1200px) {
     .testimonials-items {
@@ -204,8 +283,34 @@
     .CallToAction-items__input{
         gap: 1%;
     }
+    .maps_div iframe {
+        padding: 0 5%;
+        border: none;
+    }
+    .maps_div a{
+        padding: 0 5%;
+    }
+    .maps_heading {
+        text-align: center;
+    }
+    .CallToAction-grid {
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .CallToAction-grid p{
+        grid-row: 3;
+    }
+    .container-CallToAction-2{
+        text-align: center;
+    }
 }
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+    .video video{
+        width: 450px;
+        height: 350px;
+    }
+}
 @media screen and (max-width: 600px) {
     .testimonials-items {
         grid-template-columns: repeat(1, 1fr);
@@ -235,5 +340,16 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 1%;
         text-align: center;
+    }
+    .video{
+        margin-top: 25%;
+    }
+    .video video{
+        width: 350px;
+        height: 250px;
+    }
+    .CallToAction-grid p{
+        font-size: 13px;
+        margin-bottom: 2%;
     }
 }
