@@ -1,7 +1,7 @@
 
 @import url(Header/header.css);
 @import url(Main/main.css);
-@import url(Footer/);
+@import url(Footer/footer.css);
 
 * {
     margin: 0;
