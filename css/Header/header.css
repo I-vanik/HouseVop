@@ -1,15 +1,18 @@
+
+
 .header {
     background-image: url(Header\ image.jpg);
     width: 100%;
     height: 860px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
 .header .container {
     max-width: 57%;
     height: inherit;
     margin: 0 auto;
+    position: relative;
 }
 .logo {
     text-decoration: none;
@@ -52,6 +55,7 @@
     opacity: 0.9; 
 }
 .header__h2 {
+    position: absolute;
     margin-left: 22%;
     text-align: center;
     color: #D4C17F;
@@ -59,10 +63,10 @@
     font-weight: 700;
     font-size: 48px;
     max-width: 60%;
-    margin-top: 19%;
+    top: 19%;
 }
 .mouse {
-    margin-top: 50px;
+    margin-top: 50%;
     margin-left: 50%;
 }
 .header-contact {
@@ -96,11 +100,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .navbar-wrap {
+        padding-top: 5%;
+        align-items: flex-start;
+    }
     .navbar ul {
         display: flex;
         flex-flow: column;
-        padding: 0;
-        margin: 0;
         
     }
     .navbar li {
@@ -114,7 +120,12 @@
     .header-contact-phone-call {
         width: 80%;
     }
-
+    .navbar{
+        display: none;
+    }
+    .mouse{
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width: 800px) {
     .header__h2 {
@@ -141,7 +152,7 @@
 
 @media screen and (max-width: 600px) {
     .logo {
-        margin-right: 50%;
+        margin-right: 10%;
     }
     .header .container {
         max-width: 78%;
