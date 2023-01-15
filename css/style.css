@@ -4,6 +4,23 @@
 @import url(Main/main.css);
 @import url(Footer/footer.css);
 
+::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+    background-color: #242B33;
+
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color:#242B33;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #13171c;
+    border-radius: 50px;
+}
 
 * {
     margin: 0;
