@@ -161,7 +161,7 @@
     color: #FFF;
     background-color: #D4C17F;
     border: none;
-    margin: auto;
+    margin: 0 auto;
 }
 .CallToAction-input__btn:hover {
     background-color: #d4b97f;
@@ -351,5 +351,13 @@
     .CallToAction-grid p{
         font-size: 13px;
         margin-bottom: 2%;
+    }
+    .testimonials-items figure {
+        margin: 0 5%;
+    }
+    .testimonials-items p {
+        font-size: 14px;
+        opacity: 0.6;
+        font-family: 'Roboto', sans-serif;
     }
 }

@@ -3,7 +3,7 @@
 .header {
     background-image: url(Header\ image.jpg);
     width: 100%;
-    height: 860px;
+    height: 900px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -56,24 +56,24 @@
 }
 .header__h2 {
     position: absolute;
-    margin-left: 22%;
+    left: 22%;
     text-align: center;
     color: #D4C17F;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    max-width: 60%;
-    top: 19%;
+    width: 59%;
+    top: 37%;
 }
 .mouse {
     margin-top: 50%;
     margin-left: 50%;
 }
 .header-contact {
+    position: static;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 3%;
-    margin-top: 26%;
+    margin-top: 15%;
     text-align: center;
 }
 
@@ -113,8 +113,14 @@
         padding: 0px;
         list-style-type:none;
     }
+    .header__h2{
+        top: 27%;
+    }
+    .header-contact{
+        margin-top: 45%;
+    }
     .header-contact-placeholder {
-        width: 110%;
+        width: 100%;
     }
     
     .header-contact-phone-call {
@@ -125,13 +131,13 @@
     }
     .mouse{
         margin-top: 50px;
+        display: none;
     }
 }
 @media screen and (max-width: 800px) {
     .header__h2 {
-        font-size: 38px;
-        max-width: 100%;
-        margin-left: 13%;
+        font-size: 33px;
+        left: 18%;
     }
     .header-p { 
         font-size: 14px;  
@@ -142,11 +148,11 @@
         flex-flow: column ;
     }
     .header-contact-placeholder {
-        width: 120%;
+        width: 100%;
     }
     
     .header-contact-phone-call {
-        width: 120%;
+        width: 100%;
     }
 }
 
@@ -161,5 +167,10 @@
     }
     .header-contact {
         margin-top: 50%;
+    }
+    .header__h2 {
+        font-size: 28px;
+        width: 80%;
+        left: 9%;
     }
 }
