@@ -79,8 +79,7 @@
                     <figure>
                         <img src="icons/House.svg" alt="House">
                         <figcaption>
-                            <p>Полностью
-                            обустроенный</p>
+                            <p>Полностью обустроенный</p>
                         </figcaption>
                     </figure>
                     <figure>
@@ -133,21 +132,21 @@
                         <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
                     </div>
                     <div class="CallToAction-items">
-                        <div class="CallToAction-items__input">
+                        <form class="CallToAction-items__input" method="post" action="php/formmessage.php">
                             <div class="CallToAction-input CallToAction-input_floating ">
-                                <input autocomplete="on" class="text-input" type="text" id="text" placeholder="Ваше Имя ">
+                                <input autocomplete="on" class="text-input" type="text" name="name" placeholder="Ваше Имя ">
                             </div>
                             <div class="CallToAction-input CallToAction-input_floating">
-                                <input autocomplete="on" class="text-input" type="text"placeholder="Номер телефона">
+                                <input autocomplete="on" name="tel" class="text-input" type="tel" placeholder="Номер телефона">
                             </div>
                             <div class="CallToAction-input">
                                 <p>*Мы никому не передаем ваши данные. 
                                 И не сохраняем ваш номер в базу.</p>
                             </div>
-                            <button type="submit" class="CallToAction-input__btn">
+                            <input type="submit"  value="отправить " class="CallToAction-input__btn">
                                 <p>Посмотреть район</p>
-                            </button>
-                        </div>
+                            </input>
+                        </form>
                     </div>
                 </div>
             </div>
