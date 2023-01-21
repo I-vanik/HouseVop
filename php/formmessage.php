@@ -1,10 +1,11 @@
 <?php
 try{
     // продключение к БД
-    $dsn = 'mysql:host=127.0.0.1;dbname=housevopdb';
-    $user = 'root';
+    $dsn = 'mysql:host=www.db4free.net;dbname=housevop';
+    $user = 'mimikss';
+    $passw = '13133535';
 
-    $conn = new PDO($dsn, $user);     
+    $conn = new PDO($dsn, $user, $passw);     
 
     // Проверка на заполненность поля
     if(empty($_POST['name'])) exit("Поле не заполнено");

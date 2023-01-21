@@ -144,7 +144,7 @@
                                 И не сохраняем ваш номер в базу.</p>
                             </div>
                             <input type="submit"  value="отправить " class="CallToAction-input__btn">
-                                <p>Посмотреть район</p>
+                            
                             </input>
                         </form>
                     </div>
@@ -172,19 +172,19 @@
         <section class="CallToAction-2">
             <div class="container-CallToAction-2">
                 <h3 class="CallToAction-heading-2">Хотите посмотреть?</h3>
-                <div class="CallToAction-grid">
+                <form class="CallToAction-grid">
                     <p>*Мы никому не передаем ваши данные. 
                         И не сохраняем ваш номер в базу.</p>
                     <div class="CallToAction-input CallToAction-input_floating ">
-                        <input autocomplete="on" class="text-input" type="text" id="text" placeholder="Ваше Имя ">
+                        <input autocomplete="on" class="text-input" type="text" id="text" name="name" placeholder="Ваше Имя ">
                     </div>
                     <div class="CallToAction-input CallToAction-input_floating">
-                        <input autocomplete="on" class="text-input" type="text"placeholder="Номер телефона">
+                        <input autocomplete="on" class="text-input" name="tel" type="tel"placeholder="Номер телефона">
                     </div>
-                    <button type="submit" class="CallToAction-input__btn">
-                        <p>Посмотреть район</p>
-                    </button>
-                </div>
+                    <input type="submit" value="Отправить" class="CallToAction-input__btn">
+                        
+                    </input>
+                </form>
             </div>
         </section>
     </Main>
