@@ -1,0 +1,363 @@
+
+/* main */
+
+.main {
+}
+.main .container {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+/* section testimonials */
+
+.testimonials {
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.testimonials-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:3%;
+    align-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.testimonials-items img {
+    padding-bottom: 10%;
+
+}
+
+
+.testimonials-items figure {
+}
+.testimonials-items p {
+    font-size: 20px;
+    opacity: 0.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* section appartments */
+
+.appartments {
+}
+.appartments .container-appartments {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+.appartments-heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    margin-bottom: 10%;
+}
+.appartments-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+.appartments-image {
+    position: relative;
+}
+.appartments-image P {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+/* section CallToAction */
+
+.CallToAction {
+    width: 100%;
+    height: 560px;
+    background-image: url(/icons/sity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-CallToAction {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.CallToAction-heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    padding-top: 15%;
+}
+.CallToAction-flex {
+    display: flex;
+    margin-top: 3%;
+    
+}
+.CallToAction-flex:last-child {
+    display: flex;
+    padding-right: 7%;
+    
+}
+.CallToAction-items {
+}
+.CallToAction-items p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.CallToAction-items__input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8%;
+}
+.CallToAction-input {
+
+}
+.CallToAction-input p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+
+}
+.CallToAction-input_floating {
+    position: relative;
+}
+.CallToAction-input_floating .text-label {
+    
+}
+
+.text-input {
+    background-color: rgba(255, 255, 255, 0.193);
+    width: 255px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 600;
+}
+.text-input::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    text-align: center;
+    
+}
+.CallToAction-input__btn {
+    width: 255px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    color: #FFF;
+    background-color: #D4C17F;
+    border: none;
+    margin: 0 auto;
+}
+.CallToAction-input__btn:hover {
+    background-color: #d4b97f;
+}
+
+/* section video */
+
+
+.video{
+    text-align: center;
+    max-width: 719px;
+    max-height: 650px;
+    margin: 0 auto;
+}
+.video video{
+    width: 719px;
+    height: 650px;
+}
+
+/* section maps */
+
+.maps {
+    margin-top: 8%;
+}
+.container-maps {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.maps_heading {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    margin-bottom: 7%;
+}
+.maps_div iframe{
+    width: 100%;
+}
+
+/* section CallToAction-2 */
+
+.CallToAction-2 {
+}
+.container-CallToAction-2{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.CallToAction-heading-2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #D4C17F;
+    padding-top: 10%;
+}
+.CallToAction-grid {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+.CallToAction-grid p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.CallToAction-input {
+}
+.CallToAction-input_floating {
+}
+.text-input {
+}
+.CallToAction-input__btn {
+}
+
+
+            /* media */
+
+@media screen and (max-width: 1200px) {
+    .testimonials-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .appartments-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .appartments-image {
+        position: relative;
+        margin: 0 auto;
+    }
+    .appartments-heading {
+        text-align: center;
+    }
+    .CallToAction-heading {
+        text-align: center;
+        padding-top: 35%;
+    }
+    .CallToAction-items p {
+       text-align: center;
+       margin-bottom: 5%;
+       padding: 0 2%;
+    }
+    .CallToAction-flex {
+        display: flex;
+        flex-flow: column;   
+    }
+    .CallToAction-flex:last-child {
+        display: flex;
+        padding-right: 0%;
+        
+    }
+    .text-input{
+        margin-bottom: 4%;
+    }
+    .container-CallToAction {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .CallToAction-items__input{
+        gap: 1%;
+    }
+    .maps_div iframe {
+        padding: 0 5%;
+        border: none;
+    }
+    .maps_div a{
+        padding: 0 5%;
+    }
+    .maps_heading {
+        text-align: center;
+    }
+    .CallToAction-grid {
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .CallToAction-grid p{
+        grid-row: 3;
+    }
+    .container-CallToAction-2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .video video{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .testimonials-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonials {
+        padding-bottom: 25%;
+    }
+    .appartments-gallery {
+        gap: 6%;
+    }
+    .appartments-image {
+        text-align: center;
+        
+    }
+    .appartments-image P {
+        position: absolute;
+        top: 80%;
+        left: 12%;
+        font-size: 18px;
+    }
+
+    .appartments-image img{
+        width: 80%;
+        
+    }
+    .CallToAction-items__input{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1%;
+        text-align: center;
+    }
+    .video{
+        margin-top: 25%;
+    }
+    .video video{
+        width: 350px;
+        height: 250px;
+    }
+    .CallToAction-grid p{
+        font-size: 13px;
+        margin-bottom: 2%;
+    }
+    .testimonials-items figure {
+        margin: 0 5%;
+    }
+    .testimonials-items p {
+        font-size: 14px;
+        opacity: 0.6;
+        font-family: 'Roboto', sans-serif;
+    }
+}
